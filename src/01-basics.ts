@@ -20,6 +20,23 @@ const friends = [friend1, friend2];
 console.log(friends[1]);
 
 //   -------------------
+
+interface contact{
+    email: string;
+    extension: number;
+}
+
+
+
+interface Colleague {
+
+    name: string;
+    department: string;
+    contact: {
+        email: string;
+        extension: number;
+    }
+}
 const colleague1 = {
   name: "Ralph Graham",
   department: "Engineering",
