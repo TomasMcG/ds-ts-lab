@@ -74,3 +74,17 @@ return fr.filter(searchCriteria);
 
 console.log(findFriends(friends, (friend) => friend.name.startsWith('Pa')));
 console.log(findFriends(friends, (friend) => friend.age < 35));
+
+
+
+function addInterest(fr: Friend, interest: string): string[]{
+   if (!fr.interests) {
+    fr.interests = [];
+  }
+
+  fr.interests.push(interest);
+  return fr.interests;
+
+}
+
+console.log(addInterest(friends[0], 'Politics'))
